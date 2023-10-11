@@ -6,7 +6,7 @@ console.log(`|------------------------------------------------------|`);
 console.log(`|----------------- SNAKES AND LADDERS -----------------|`);
 console.log(`|------------------------------------------------------|`);
 
-toDisplayPlayerGame1(0, 99, 0, 99);
+toDisplayPlayerGame1(0, 0, 0, 0);
 function toDisplayPlayerGame1(
   previousNumberPlayer1,
   onDiceNumberPlayer1,
@@ -251,7 +251,7 @@ function toSpinDice2(
     return;
   }
 
-  if (command != "exit") {
+  if (command != "throw") {
     console.log("\n");
     console.log(
       "You have entered the wrong command, please enter the [ throw ] command"
