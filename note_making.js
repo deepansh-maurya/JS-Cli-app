@@ -65,7 +65,10 @@ function obseleteNote(takeNote, title) {
 function toListNotes(takeNote) {
   console.log("\n");
 
-  console.log(`------------ Listing Your Notes -------------`);
+  console.log('╔════════════ Listing Your Notes ════════════╗');
+console.log('║                                            ║');
+console.log('╚════════════════════════════════════════════╝');
+
   let number = 1;
   if (takeNote.length == 0 || typeof takeNote == undefined) {
     console.log(`No notes available. Use CREATE command to create note`);
@@ -132,7 +135,10 @@ function toEditNoteContent(takeNote, title) {
   edit[num - 1] = prompt(
     "Enter the updated line and don't forget to end the line the fullstop : "
   );
-  console.log(`------------ Line Updated Succesfully ----------------`);
+ console.log('--------------------------------------------------');
+console.log('|          Line Updated Successfully               |');
+console.log('--------------------------------------------------');
+
 
   arrayToEdit[0].content = edit.toString();
 
